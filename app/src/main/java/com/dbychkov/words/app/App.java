@@ -48,7 +48,9 @@ public class App extends Application {
         //First parameter: context
         //Second parameter: Mid (the first four numbers of Posid)
         //Product channel ID, could be empty string if none
-        CMAdManager.applicationInit(this, "1094", "");
+        CMAdManager.applicationInit(this, "1388", "");
+        //开启Debug模式，默认不开启不会打印log
+        CMAdManager.enableLog();
     }
 
     private ApplicationComponent applicationComponent;
