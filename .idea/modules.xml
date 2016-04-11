@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/data/data.iml" filepath="$PROJECT_DIR$/data/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/domain/domain.iml" filepath="$PROJECT_DIR$/domain/domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/generator/generator.iml" filepath="$PROJECT_DIR$/generator/generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kiipsdk/kiipsdk.iml" filepath="$PROJECT_DIR$/kiipsdk/kiipsdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/words4you.iml" filepath="$PROJECT_DIR$/words4you.iml" />
     </modules>
   </component>
