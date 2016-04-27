@@ -58,27 +58,11 @@ public class OrionNativeAdview extends FrameLayout {
             Picasso.with(mContext).load(iconUrl)
                     .into(iconImageView);
         }
-        //获取大卡的背景图片的url
-        String mainImageUrl = ad.getAdCoverImageUrl();
-        if (!TextUtils.isEmpty(mainImageUrl)) {
-            ImageView imageViewMain = (ImageView) mNativeAdView
-                    .findViewById(R.id.iv_main);
-            imageViewMain.setVisibility(View.VISIBLE);
-            Picasso.with(mContext).load(mainImageUrl)
-                    .into(imageViewMain);
-        }
-
-        Log.e("URL", mainImageUrl != null ? mainImageUrl : "mainImageUrl is null");
-
 
         TextView titleTextView = (TextView) mNativeAdView.findViewById(R.id.big_main_title);
-        TextView subtitleTextView = (TextView) mNativeAdView.findViewById(R.id.big_sub_title);
-        Button bigButton = (Button) mNativeAdView.findViewById(R.id.big_btn_install);
         TextView bodyTextView = (TextView) mNativeAdView.findViewById(R.id.text_body);
 
         titleTextView.setText(ad.getAdTitle());
-        subtitleTextView.setText(ad.getAdSocialContext());
-        bigButton.setText(ad.getAdCallToAction());
         bodyTextView.setText(ad.getAdBody());
 
         if (mNativeAd != null) {
